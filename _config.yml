@@ -1,14 +1,11 @@
 title: Canon
 email: info@domain.com
-description: Coming Soon
+description: Canon is coming soon. Sign up to be the first to know.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-
-gems:
-  - jekyll-feed
 
 social:
   instagram: https://www.instagram.com/thehoneyagency/

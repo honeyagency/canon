@@ -1,0 +1,70 @@
+@mixin fadeInDown {
+    0% {
+        transform: translatey(-50px);
+        opacity: 0;
+    }
+
+    75% {
+        opacity: .65;
+    }
+
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    @include fadeInDown;
+}
+
+// .fadeText {
+//     transition-duration: .2s;
+//     transition-property: transform;
+//     animation-duration: 1s;
+//     animation-iteration-count: 1;
+//     animation-name: fadeInDown;
+//     animation-timing-function: $base-animation;
+// }
+.icon-logo-two {
+    path, polyline {
+        stroke: #fff;
+        stroke-dasharray: 400;
+        stroke-dashoffset: -400;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-timing-function: $base-animation;
+        fill: transparent;
+        animation-name: dash;
+    }
+
+    .cls-2 {
+        stroke-dasharray: none;
+        stroke-offest: none;
+        fill: #d2ab82;
+        stroke: none;
+        animation: none !important;
+    }
+
+    // #letter-1 {
+    //     animation-delay: 1s;
+    // }
+
+    // #letter-1-2 {
+    //     animation-delay: 1.2s;
+    // }
+
+    // #letter-2 {
+    //     animation-delay: 1.5s;
+    // }
+
+    // #stroke > path {
+    //     animation-delay: 2s;
+    // }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+}
