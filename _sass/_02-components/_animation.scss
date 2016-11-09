@@ -26,45 +26,48 @@
 //     animation-name: fadeInDown;
 //     animation-timing-function: $base-animation;
 // }
-.icon-logo-two {
-    path, polyline {
-        stroke: #fff;
-        stroke-dasharray: 400;
-        stroke-dashoffset: -400;
-        animation-duration: 2s;
-        animation-fill-mode: forwards;
-        animation-timing-function: $base-animation;
-        fill: transparent;
-        animation-name: dash;
-    }
 
-    .cls-2 {
-        stroke-dasharray: none;
-        stroke-offest: none;
-        fill: #d2ab82;
-        stroke: none;
-        animation: none !important;
-    }
+@include media($screen-sm) {
+    .icon-logo-two {
+        path, polyline {
+            stroke: #fff;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: -1000;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: $base-animation;
+            fill: transparent;
+            animation-name: dash;
+        }
 
-    // #letter-1 {
-    //     animation-delay: 1s;
-    // }
+        .cls-2 {
+            stroke-dasharray: none;
+            stroke-offest: none;
+            fill: #d2ab82;
+            stroke: none;
+            animation: none !important;
+        }
 
-    // #letter-1-2 {
-    //     animation-delay: 1.2s;
-    // }
+        // #letter-1 {
+        //     animation-delay: 1s;
+        // }
 
-    // #letter-2 {
-    //     animation-delay: 1.5s;
-    // }
+        // #letter-1-2 {
+        //     animation-delay: 1.2s;
+        // }
 
-    // #stroke > path {
-    //     animation-delay: 2s;
-    // }
+        // #letter-2 {
+        //     animation-delay: 1.5s;
+        // }
 
-    @keyframes dash {
-        to {
-            stroke-dashoffset: 0;
+        // #stroke > path {
+        //     animation-delay: 2s;
+        // }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
         }
     }
 }
