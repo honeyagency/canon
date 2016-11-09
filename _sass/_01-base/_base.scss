@@ -2,6 +2,10 @@ body {
     overflow-x: hidden;
     background-color: map-get($blue, main);
     height: 100vh;
+    background-image: url("/app/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 main {
@@ -82,3 +86,12 @@ img {
         }
     }
 }
+
+// footer {
+//     position: absolute;
+
+//     .icon-east-sac {
+//         width: 100px;
+//         display: block;
+//     }
+// }
