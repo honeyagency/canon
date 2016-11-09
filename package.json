@@ -1,0 +1,36 @@
+{
+    "name": "canon",
+    "version": "1.0.0",
+    "description": "canon website",
+    "main": "Gruntfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://joshre@github.com/honeyagency/canon.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/honeyagency/canon/issues"
+    },
+    "homepage": "https://github.com/honeyagency/canon#readme",
+    "devDependencies": {
+        "cssnano": "*",
+        "grunt": "*",
+        "grunt-contrib-clean": "*",
+        "grunt-contrib-copy": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-cssnano": "*",
+        "grunt-grunticon": "^2.3.0",
+        "grunt-jekyll": "^0.4.4",
+        "grunt-notify": "*",
+        "grunt-postcss": "^0.8.0",
+        "grunt-svgmin": "*",
+        "postcss-convert-values": "^2.3.4",
+        "postcss-font-magician": "^1.4.0"
+    }
+}

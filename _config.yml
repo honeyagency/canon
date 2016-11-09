@@ -10,7 +10,14 @@ markdown: kramdown
 gems:
   - jekyll-feed
 
+social:
+  instagram: https://www.instagram.com/thehoneyagency/
+  facebook: https://www.facebook.com/thehoneyagency/
+
 exclude:
   - Gemfile
   - Gemfile.lock
-  
+  - node_modules
+  - package.json
+  - Gruntfile.js
+  - _sass
