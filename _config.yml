@@ -1,6 +1,6 @@
 title: Canon
 email: info@domain.com
-description: Canon is coming soon. Sign up to be the first to know.
+description: Canon is a chef-driven neighborhood restaurant, sign up to stay in touch.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -8,8 +8,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 markdown: kramdown
 
 social:
-  instagram: https://www.instagram.com/thehoneyagency/
-  facebook: https://www.facebook.com/thehoneyagency/
+  # instagram: https://www.instagram.com/thehoneyagency/
+  # facebook: https://www.facebook.com/thehoneyagency/
 
 exclude:
   - Gemfile
