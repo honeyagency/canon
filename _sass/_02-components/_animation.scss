@@ -25,7 +25,7 @@
             stroke-dashoffset: -60;
             animation-duration: 2s;
             animation-fill-mode: forwards;
-            animation-timing-function: $base-animation;
+            animation-timing-function: cubic-bezier(0.26, 0.04, 0.27, 0.95);
             fill: transparent;
             stroke: transparent;
             animation-name: dash;
