@@ -1,5 +1,9 @@
 .icon-east-sac { background-image: url('app/icons/east-sac.png'); background-repeat: no-repeat; }
 
+.icon-fill { background-image: url('app/icons/fill.png'); background-repeat: no-repeat; }
+
+.icon-line-thin { background-image: url('app/icons/line-thin.png'); background-repeat: no-repeat; }
+
 .icon-line { background-image: url('app/icons/line.png'); background-repeat: no-repeat; }
 
 .icon-logo-two { background-image: url('app/icons/logo-two.png'); background-repeat: no-repeat; }
@@ -13,4 +17,6 @@
 .icon-social--instagram { background-image: url('app/icons/social--instagram.png'); background-repeat: no-repeat; }
 
 .icon-social--twitter { background-image: url('app/icons/social--twitter.png'); background-repeat: no-repeat; }
+
+.icon-wide-line { background-image: url('app/icons/wide-line.png'); background-repeat: no-repeat; }
 

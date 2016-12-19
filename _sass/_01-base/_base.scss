@@ -24,6 +24,16 @@ img {
     max-width: 100%;
 }
 
+.icon-fill {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+
+    svg {
+        width: 200px;
+    }
+}
+
 .bg--texture {
     background-color: map-get($blue, main);
     background-image: url("/app/images/bg.jpg");
@@ -48,12 +58,12 @@ img {
 .icon-logo-two {
     margin: 0 auto;
     display: block;
-   width: 72vw;
+    width: 72vw;
+
     @include media($screen-sm) {
         top: 50%;
         transform: translateY(-50%);
         position: relative;
-     
     }
 
 
@@ -69,6 +79,8 @@ img {
 .chef-spacing {
     padding-top: 2em;
     padding-bottom: 0;
+    margin: 0 auto;
+    display: table;
 }
 
 .chef-wrap {

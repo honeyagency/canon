@@ -6,16 +6,17 @@ layout: default
 		<i class="icon-logo-two" data-grunticon-embed></i>
 	</div>
 	<div class="max-wrap spacing--gutter grid--md-two-thirds spacing--vert-2 spacing--dsk-vert-6">
-	<h2 class="text--center">{{site.description}}</h2>
-	<!-- <a href="" class="subscribePopup color--white bg--gold subButton">Subscribe</a> -->
-<div class="spacing--vert-3">
-	{% include form.html %}
-	</div>
+		<i class="icon-fill" data-grunticon-embed></i><br>
+		<h2 class="text--center">{{site.description}}</h2>
+		<!-- <a href="" class="subscribePopup color--white bg--gold subButton">Subscribe</a> -->
+		<div class="spacing--vert-3">
+			{% include form.html %}
+		</div>
 	</div>
 </section>
 {% assign bios = site.bios | sort:"order" %}
 <section class="spacing--gutter spacing--vert-2">
-	<h2 class="color--black text--center chef-spacing">Meet The Team</h2>
+	<h2 class="color--black text--center chef-spacing icon-line-thin">Meet The Team</h2>
 </section>
 {% for bio in bios %}
 	<section class="chef-wrap flex flex-wrap justify--between spacing--gutter-dsk spacing--dsk-vert-3 max-wrap color--black">
