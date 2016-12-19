@@ -18,15 +18,32 @@
     }
 }
 
-.color--brown-light {
-    color: map-get($brown, light);
+.color--gray {
+    color: transparentize($black, 0.3);
 
     svg {
         path {
-            fill: map-get($brown, light);
+            fill: transparentize($black, 0.3);
         }
     }
 }
-.color--red-dark {
-    color: map-get($red, dark);
+
+.color--gold {
+    color: map-get($gold, main);
+
+    svg {
+        path {
+            fill: map-get($gold, main);
+        }
+    }
+}
+
+.color--gold-faded {
+    color: map-get($gold, faded);
+
+    svg {
+        path {
+            fill: map-get($gold, faded);
+        }
+    }
 }

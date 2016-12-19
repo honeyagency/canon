@@ -1,15 +1,15 @@
-.bg--brown {
-    background-color: map-get($brown, faded);
+.bg--gold {
+    background-color: map-get($gold, main);
+}
+
+.bg--blue {
+    background-color: map-get($blue, main);
 }
 
 .bg--black {
-    background-color: black;
+    background-color: $black;
 }
 
 .bg--white {
     background-color: white;
-}
-
-.bg--red-dark {
-    background-color: map-get($red, dark);
 }

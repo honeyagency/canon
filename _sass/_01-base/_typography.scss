@@ -1,5 +1,5 @@
 body {
-    font-family: $base-sans-font;
+    font-family: $base-serif-font;
     line-height: $base-line-height;
     font-size: 1.1rem;
 
@@ -22,7 +22,8 @@ body {
 }
 
 %headings {
-    font-family: $base-sans-font;
+    font-family: $base-serif-font;
+
     // font-weight: $heading-font-weight;
     line-height: 1.31;
 }
@@ -36,17 +37,12 @@ h1, h2, h3, h4, h5, h6 {
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
-    text-transform: uppercase;
-
-    &.font--sans {
-        font-weight: 500;
-    }
 }
 
 // mobile
 $h1: 2.5 * $base-font-size;
-$h2: 1.075 * $base-font-size;
-$h3: 0.95 * $base-font-size;
+$h2: 1.2 * $base-font-size;
+$h3: 1.2 * $base-font-size;
 $h4: 0.9 * $base-font-size;
 $h5: 0.875 * $base-font-size;
 $h6: 0.7 * $base-font-size;
@@ -61,16 +57,19 @@ h1 {
 h2 {
     font-size: $h2;
     letter-spacing: 1.7px;
-    line-height: 1;
+    line-height: 1.31;
 }
 
 h3 {
-    font-size: 0.85em;
+    font-size: $h3;
     letter-spacing: 1.6px;
+    font-weight: 900;
 }
 
 h4 {
     font-size: $h4;
+    font-weight: 900;
+    font-style: italic;
 }
 
 h5 {
@@ -89,7 +88,7 @@ h6 {
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     h3 {

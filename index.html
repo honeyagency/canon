@@ -1,9 +1,34 @@
 ---
 layout: default
 ---
-<section class="home-wrap">
-	<i class="icon-logo-two" data-grunticon-embed></i>
-	<div class="spacing--vert-1 fadeText">Canon is a chef-driven neighborhood restaurant, sign up below to stay in touch. Trust us, it will be amazing.</div>
+<section class="flex flex-wrap justify--center spacing--gutter intro spacing--vert-2 bg--texture">
+	<div class="grid--one logo">
+		<i class="icon-logo-two" data-grunticon-embed></i>
+	</div>
+	<div class="max-wrap spacing--gutter grid--md-two-thirds spacing--vert-2 spacing--dsk-vert-6">
+	<h2 class="text--center">{{site.description}}</h2>
+	<!-- <a href="" class="subscribePopup color--white bg--gold subButton">Subscribe</a> -->
+<div class="spacing--vert-3">
 	{% include form.html %}
-	{% include social.html %}
+	</div>
+	</div>
 </section>
+{% assign bios = site.bios | sort:"order" %}
+<section class="spacing--gutter spacing--vert-2">
+	<h2 class="color--black text--center chef-spacing">Meet The Team</h2>
+</section>
+{% for bio in bios %}
+	<section class="chef-wrap flex flex-wrap justify--between spacing--gutter-dsk spacing--dsk-vert-3 max-wrap color--black">
+		<div class="chef--profile grid--one grid--sm-third" id="{{bio.name |downcase| replace: ' ','-' }}">
+			<img src="{{bio.image}}" width="300" alt="{{bio.name}}">
+			<div class="spacing--gutter-mob spacing--vert-1">
+				<h3>{{bio.name}}</h3>
+				<h4>{{bio.position}}</h4>
+			</div>
+		</div>
+		<div class="chef--bio grid--one grid--sm-two-thirds spacing--gutter-mob">
+			<div class="bio-content">{{bio.content}}</div>
+			<a href="" class="text--uppercase dsk--hide color--gray text--center font--sans readmore">Read More</a>
+		</div>
+	</section>
+{% endfor %}

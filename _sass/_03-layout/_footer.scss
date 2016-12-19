@@ -1,0 +1,77 @@
+.social--links {
+    .footer--social {
+        &:nth-of-type(2) {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        i {
+            @include media($max-sm) {
+                display: block;
+            }
+
+
+            height: 7em;
+            width: 7em;
+
+            svg {
+                height: 7em;
+                width: 7em;
+
+                path {
+                    fill: map-get($gold, faded);
+                    transition: fill 0.17s $base-timing;
+                }
+            }
+
+            @include media($max-sm) {
+                display: block;
+                margin: 0 auto;
+                height: 3em;
+
+                svg {}
+            }
+        }
+
+        &:hover {
+            pointer: cursor;
+
+            i {
+                svg {
+                    path {
+                        fill: map-get($gold, main);
+                        transition: fill 0.17s $base-timing;
+                    }
+                }
+            }
+        }
+
+        .icon-social--facebook {
+            width: 5.5em;
+
+            svg {
+                width: 5.5em;
+            }
+        }
+    }
+}
+
+.footer--light {
+    opacity: .7;
+    font-size: 1rem;
+}
+
+.footer--links {
+    display: table;
+    border: 1px solid;
+    padding: 0.6em 1.4em 0.3em 1.4em;
+    margin: 0em auto 1em auto;
+    min-width: 250px;
+    text-transform: capitalize;
+    transition: color 0.2s $base-animation;
+
+    &:hover {
+        transition: color 0.2s $base-animation;
+        color: map-get($gold, main);
+    }
+}

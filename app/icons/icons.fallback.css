@@ -1,10 +1,16 @@
 .icon-east-sac { background-image: url('app/icons/east-sac.png'); background-repeat: no-repeat; }
 
+.icon-line { background-image: url('app/icons/line.png'); background-repeat: no-repeat; }
+
 .icon-logo-two { background-image: url('app/icons/logo-two.png'); background-repeat: no-repeat; }
 
 .icon-logo { background-image: url('app/icons/logo.png'); background-repeat: no-repeat; }
 
 .icon-social--facebook { background-image: url('app/icons/social--facebook.png'); background-repeat: no-repeat; }
 
+.icon-social--insta { background-image: url('app/icons/social--insta.png'); background-repeat: no-repeat; }
+
 .icon-social--instagram { background-image: url('app/icons/social--instagram.png'); background-repeat: no-repeat; }
+
+.icon-social--twitter { background-image: url('app/icons/social--twitter.png'); background-repeat: no-repeat; }
 

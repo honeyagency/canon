@@ -14,20 +14,21 @@
   '_01-base/base';
 
 @import
-  '_03-layout/forms';
+  '_03-layout/forms',
+  '_03-layout/footer';
 //   '_03-layout/navigation',
 //   '_03-layout/header',
-//   '_03-layout/footer',
+  
 
 @import
   '_02-components/spacing',
-  '_02-components/animation';
-//   '_02-components/border',
-//   '_02-components/buttons',
-//   '_02-components/color',
-//   '_02-components/display',
-//   '_02-components/font-utils',
-//   '_02-components/grid',
+  '_02-components/animation',
+  '_02-components/bg-color',
+  '_02-components/buttons',
+  '_02-components/color',
+  '_02-components/display',
+  '_02-components/font-utils',
+  '_02-components/grid';
 //   '_02-components/margin',
 
 

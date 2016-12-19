@@ -1,8 +1,11 @@
 
-$body-sans-font: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+$body-serif-font: "adobe-caslon-pro",serif;
 
-$base-sans-font: $body-sans-font;
-// $body-condensed-font: $body-sans-font;
+$base-serif-font: $body-serif-font;
+
+$base-sans-font: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+
+// $body-condensed-font: $body-serif-font;
 
 // $secondary-sans-font: 'ff-basic-gothic-web-pro', sans-serif;
 // $heading-font-family: 'eloquent-jf-small-caps-pro', serif;

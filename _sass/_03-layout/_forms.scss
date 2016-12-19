@@ -20,20 +20,21 @@ select,
 textarea,
 #{$all-text-inputs},[type="submit"] {
     font-size: 1rem;
+
     @include media($screen-sm) {
         font-size: 1.1rem;
     }
-    font-family: $base-sans-font;
-    color: map-get($gold, main);
+
+
+    font-family: $base-serif-font;
+    color: map-get($gold, faded);
     appearance: none;
     background-color: transparent;
     border: none;
-    border: 1px solid map-get($gold, main);
-
     border-radius: 0 !important;
     box-shadow: none;
     box-sizing: border-box;
-    padding: 1em;
+    padding: 1em 1.3em .5em 1.3em;
     transition: border-color .3s ease-in-out;
 
     &:focus {
@@ -43,21 +44,21 @@ textarea,
     }
 
     &::-webkit-input-placeholder {
-        color: transparentize(map-get($gold, main), 0.4);
+        color: map-get($gold, faded);
     }
 
     &:-moz-placeholder {
         /* Firefox 18- */
-        color: transparentize(map-get($gold, main), 0.4);
+        color: map-get($gold, faded);
     }
 
     &::-moz-placeholder {
         /* Firefox 19+ */
-        color: transparentize(map-get($gold, main), 0.4);
+        color: map-get($gold, faded);
     }
 
     &:-ms-input-placeholder {
-        color: transparentize(map-get($gold, main), 0.4);
+        color: map-get($gold, faded);
     }
 }
 
@@ -66,18 +67,59 @@ textarea,
     select,
     textarea,
     #{$all-text-inputs},[type="submit"] {
-        width: 48%;
+        width: 100%;
+        margin: 0.5em auto;
 
-        &:nth-of-type(even) {
-            float: right;
+        @include media($screen-sm) {
+            width: 48%;
+            margin: 0;
+
+            &:nth-of-type(even) {
+                float: right;
+            }
+        }
+    }
+}
+
+.mc-field-group {
+    @include media($screen-sm) {
+        &:nth-of-type(2) {
+            margin-top: 1em;
+        }
+    }
+
+
+    @include media($max-sm) {
+        &:nth-of-type(2) {
+            padding-top: 0 !important;
         }
     }
 }
 
 .mc-field-group {
     [type="submit"] {
-        color: white;
-        background-color: map-get($gold, main);
+        width: 42%;
+        margin-right: 20px;
+        border: 1px solid;
+        color: map-get($gold, faded);
+        transition: color 0.2s $base-animation;
+        background-color: transparent;
+        border: 1px solid;
+
+        @include media($max-sm) {
+            // color: white;
+            // background-color: #d6c6b2;
+            // border: none;
+            width: 78vw;
+            margin: 1.8em auto;
+            display: table;
+        }
+
+
+        &:hover {
+            color: map-get($gold, main);
+            transition: color 0.2s $base-animation;
+        }
     }
 }
 
@@ -108,7 +150,52 @@ select {
     position: absolute;
     left: -10000px;
     top: auto;
-    width: 1px;
     height: 1px;
+    width: 1px;
     overflow: hidden;
+}
+
+.signupForm {
+    z-index: 99;
+
+    // position: fixed;
+    // left: 5vw;
+    // width: 90vw;
+
+    // @include media($screen-sm) {
+    //     width: 60vw;
+    //     left: 20vw;
+    // }
+
+    // top: 200%;
+    // transform: translateY(-50%);
+    // background-color: white;
+    // padding: 1em;
+    border: none;
+
+    // transition: top 0.3s $base-animation;
+
+    .subscribePopup {
+        color: map-get($gold, main);
+        font-size: .9rem;
+        text-transform: uppercase;
+        position: absolute;
+        right: 1em;
+        top: 0.7em;
+
+        @extend .font--sans;
+    }
+
+    h3 {
+        margin-bottom: .5em;
+    }
+
+    &.open {
+        transition: top 0.3s $base-animation;
+        top: 50%;
+    }
+}
+
+.icon-line {
+    background-position: bottom;
 }

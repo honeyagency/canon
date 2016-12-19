@@ -1,12 +1,3 @@
-hr.double {
-    border: none;
-    border-top: 2px solid;
-    border-bottom: 1px solid;
-    height: 7px;
-
-    @include row;
-}
-
 .font--medium {
     font-size: 1.1em;
 }
@@ -18,22 +9,12 @@ hr.double {
         font-size: 1.3em;
     }
 }
+.font--sans{
+    font-family: $base-sans-font;
+}
 
 .font--larger {
     font-size: 2.5em;
-}
-
-.font--sans {
-    font-family: $secondary-sans-font;
-    font-weight: 100;
-}
-
-.font--kp {
-    font-family: $body-sans-font;
-
-    &.condensed {
-        font-family: $body-condensed-font;
-    }
 }
 
 .font--thin {
