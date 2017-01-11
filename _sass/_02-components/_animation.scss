@@ -48,3 +48,26 @@
         }
     }
 }
+
+
+@mixin fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.feast--logo {
+    opacity: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.26, 0.04, 0.27, 0.95);
+    animation-name: fadeIn;
+
+    @keyframes fadeIn {
+        @include fadeIn;
+    }
+}

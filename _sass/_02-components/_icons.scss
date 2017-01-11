@@ -1,0 +1,58 @@
+.icon-arrow-right {
+    display: inline-block;
+    width: 10px;
+    margin-left: 5px;
+
+    @include media($max-sm) {
+        width: 7px;
+    }
+
+
+    svg {}
+
+    &.feast {
+        margin-right: 5px;
+        margin-left: 0;
+
+        svg {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.arrow-icon {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+
+    .color--white {
+        letter-spacing: 1.3px;
+    }
+
+    @include media($max-sm) {
+        text-align: left;
+        left: 0;
+        top: 0;
+        padding-top: .3em;
+        padding-left: .3em;
+        padding-right: .3em;
+        width: 100%;
+        background-color: #333333;
+
+        .color--white {
+            font-size: .8em;
+        }
+    }
+
+
+    &.home {
+        left: auto !important;
+        right: .5em;
+        opacity: .9;
+
+        @include media($max-sm) {
+            text-align: right;
+            right: 0;
+        }
+    }
+}

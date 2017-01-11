@@ -1,0 +1,28 @@
+.icon-canon-feast {
+    svg {
+        width: 200px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.bg--feast {
+    height: 70vh;
+
+    // @include media($screen-sm) {
+    height: 100vh;
+
+    // }
+
+    .feast--logo {
+        padding: 3em 4em;
+        max-width: 90%;
+    }
+}
+
+.eventBrite {
+    @include media($max-sm) {
+        height: auto !important;
+    }
+}
