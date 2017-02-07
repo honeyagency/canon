@@ -33,13 +33,12 @@
 }
 
 .readmore {
-    font-weight: 900 !important;
-    letter-spacing: 1px;
-    text-align: center;
-    display: block;
-    padding: 0.6em;
+    display: table;
     border: 1px solid;
-    margin: 1em;
+    padding: .6em 1.4em .3em;
+    margin: 1em auto 1em;
+    min-width: 250px;
+    margin-top: 1em !important;
     position: relative;
     z-index: 99;
 }

@@ -40,6 +40,15 @@
 	padding-left: 3em;
     }
 }
+.spacing--mob-bot-1{@include media($max-sm){padding-bottom: 1em;}}
+.spacing--mob-bot-2{@include media($max-sm){padding-bottom: 2em;}}
+.spacing--mob-bot-3{@include media($max-sm){padding-bottom: 3em;}}
+.spacing--mob-bot-4{@include media($max-sm){padding-bottom: 4em;}}
+
+.spacing--bot-1{padding-bottom: 1em;}
+.spacing--bot-2{padding-bottom: 2em;}
+.spacing--bot-3{padding-bottom: 3em;}
+.spacing--bot-4{padding-bottom: 4em;}
 
 .spacing--gutter-dsk {
 
