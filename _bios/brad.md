@@ -1,7 +1,7 @@
 ---
 name: Brad Cecchi
 position: Chef
-image: /app/images/brad.jpg
+image: /app/images/brad-updated.jpg
 order: 1
 ---
 
