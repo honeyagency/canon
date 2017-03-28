@@ -50,3 +50,15 @@
     padding: 0.9em 1em 0.6em 1em;
     line-height: 1.2;
 }
+
+// stripe
+
+.stripe-button-el {
+    background: none !important;
+    box-shadow: none !important;
+
+    span {
+        text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2) !important;
+        background-image: linear-gradient(map-get($gold, faded), map-get($gold, main) 85%, darken(map-get($gold, faded), 10%)) !important;
+    }
+}
