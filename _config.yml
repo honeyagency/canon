@@ -7,6 +7,9 @@ url: "http://canoneastsac.com" # the base hostname & protocol for your site, e.g
 # Build settings
 markdown: kramdown
 
+gems:
+  - jekyll-sitemap
+
 social:
   # instagram: https://www.instagram.com/thehoneyagency/
   # facebook: https://www.facebook.com/thehoneyagency/
@@ -22,7 +25,7 @@ exclude:
 
 collections:    
   bios:
-    output: true
+    output: false
 
 social:
   01:
