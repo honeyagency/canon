@@ -20,18 +20,20 @@
 
 @include media($screen-sm) {
     .icon-logo-two {
-        path, polyline {
-            stroke-dasharray: 1000;
-            stroke-dashoffset: -60;
-            animation-duration: 2s;
-            animation-fill-mode: forwards;
-            animation-timing-function: cubic-bezier(0.26, 0.04, 0.27, 0.95);
-            fill: transparent;
-            stroke: transparent;
-            animation-name: dash;
+        g {
+            path, polyline {
+                stroke-dasharray: 1000;
+                stroke-dashoffset: -60;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+                animation-timing-function: cubic-bezier(0.26, 0.04, 0.27, 0.95);
+                fill: transparent;
+                stroke: transparent;
+                animation-name: dash;
+            }
         }
 
-        .cls-2 {
+        [data-name="Border"] {
             opacity: 1;
             stroke-dasharray: none;
             stroke-offest: none;
@@ -42,7 +44,7 @@
 
         @keyframes dash {
             to {
-                stroke: #fff;
+                stroke: $white;
                 stroke-dashoffset: 0;
             }
         }
