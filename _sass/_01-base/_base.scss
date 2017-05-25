@@ -149,7 +149,7 @@ img {
             position: absolute;
             height: 80px;
             opacity: 1;
-            background: linear-gradient(0deg, $white, $white, transparent);
+            background: linear-gradient(0deg, $white, $white, rgba(222, 220, 197, 0));
         }
 
         &.open {
