@@ -21,7 +21,7 @@ body {
 main {
     @include row;
 
-    background-color: $white;
+    background-color: transparentize($white, .5);
 
     &.feast {
         background-color: white;
